@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(213, 209, 209);
+}
+section{
+    width: 37%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-bottom-right-radius: 120px;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+}
+.formTop{
+    display: flex;
+}
+.show, .showMonth, .showYear{
+    color: red;
+    display: none;
+    font-size: 0.8rem;
+}
+.great, .greater, .greatest{
+    color: red;
+    display: none;
+    font-size: 0.8rem;
+}
+.day span input, .month span input, .year span input{
+    padding: 15px;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.lll{
+    width: 5px;
+    height: 1px;
+    background-color: black;
+    width: 90%;
+
+}
+.button{
+    background-color: hsl(259, 100%, 65%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+.years, .months, .days{
+    display: flex;
+    font-size: 45px;
+    color: hsl(259, 100%, 65%);
+}
+.years span{
+    color: black;
+}
+@media screen and (max-width: 950px) {
+    body{
+        width: 100%;
+        padding: 20px;
+    }
+    section{
+        width: 100%;
+    }
+    .show{
+        font-size: 10px;
+    }
+    .years span{
+        font-size: 40px;
+    }
+    .line{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .line .button{
+        position: absolute;
+        right: 50%;
+    }
+}
